@@ -1,11 +1,11 @@
 ## wayocr, a simple fast OCR help for blind on wayland session  
-##Introduction  
+## Introduction  
 In last years, popular screen reader, such as Jaws and NVDA in Windows had implemented OCR functions which allow to read inaccessible screen windows and in some case also a IA image recognizer.  
 This feature doesn't yet implemented in Orca screen reader on Linux, but there are third parties such as ocrdesktop that do this.  
 Otherwise, this software works in X11 session only, but no in wayland, the recent Linux graphical server.  
 I'm actually working on GNOME session using wayland and for this reason I wrote a rudimental script that provides to take a screenshot and via OCR engine return output of a specific window.  
 This script I called "wayocr", fusion of wayland and ocr.  
-##How it works  
+## How it works  
 This script when it run provides to take a screenshot with relative software (for now it supports only gnome-screenshot) that you must install via your distro package manager (apt on Debian, dnf on Fedora, pacman in Archlinux etc.), then via tesseract it's scanned and results are saved in file that's opened with your text editor application.  
 To run it I suggest to associate a shortcut (I associated Ctrl+Alt+R).  
 It isn't a perfect solution but might can be useful for reading inaccessible apps.  
